@@ -1,0 +1,52 @@
+@import "reset"
+
+::placeholder
+	color: $accent
+
+::selection
+	background-color: $accent
+	color: $white-color
+
+h2
+    font-size: 40px
+    font-family: $font-light
+
+h3,
+p
+	font-family: $font-light
+	color: $text
+
+h4
+	font-family: $font-bold
+	font-size: 18px
+
+a
+    color: $text
+    &:hover
+        color: $text
+        text-decoration: none    
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-size: 16px
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+
+
+b, strong
+	font-weight: bold
+
+
+body	
+	color: $accent
+	background-image: url(../img/top-bg.png)
+	background-position: top right
+	background-size: cover
+	background-attachment: fixed
+

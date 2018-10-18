@@ -1,0 +1,47 @@
+.contact-bar
+	text-align: center
+	> .head
+		margin-bottom: 6rem
+		+decor-shape
+	> .contact-info
+		display: flex
+		flex-direction: column
+		width: 100%
+		justify-content: center
+	> .contact-info > .column
+		margin: 0 1rem 5vw 4vw
+		width: auto
+		text-align: left
+	> .contact-info > .column > .head
+		text-transform: uppercase
+		
+	> .contact-form
+		width: 100%
+		display: flex
+		flex-direction: column
+		text-align: left
+		> .head
+			margin-bottom: 2rem
+		> .form 
+			text-align: center
+		> .form > .name, 
+		> .form > .email
+			display: inline-block
+			width: 43%
+			+form-design
+		> .form > .name
+			float: left
+		> .form > .email
+			float: right
+		> .form > .message
+			display: block
+			width: 100%
+			+form-design
+		> .form > .submit
+			padding: .5rem 1rem
+			margin-bottom: 3rem
+			background-color: transparent
+			box-shadow: none
+			border: 1px solid $accent
+			color: $accent
+			+hover

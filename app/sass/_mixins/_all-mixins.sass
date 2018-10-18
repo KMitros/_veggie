@@ -1,0 +1,28 @@
+@mixin respon-img($display: block, $max-w: 100%, $height: auto)
+    display: $display
+    max-width: $max-w
+    height: $height   
+
+@mixin decor-shape()
+    position: relative
+    &::after
+        content: url(../img/decoration-1.png)
+        position: absolute
+        width: 250px
+        margin-left: -125px
+        top: 100%
+        left: 50%
+
+@mixin form-design()
+    margin-bottom: 3rem
+    font-style: italic
+    color: $accent
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid $accent
+
+@mixin hover
+    transition: .25s all ease
+    &:hover
+        transform: scale(1.2)
+        box-shadow: 1px 1px 5px $accent

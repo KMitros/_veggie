@@ -1,0 +1,187 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "_mixins/all-mixins"
+@import "_base/base"
+@import "_components/*"
+
+
+.main-head
+	font-family: $font-regular
+	.head-nav
+		padding: 0 5vw
+		margin: 3rem 0 11rem
+	.head-nav > .nav
+		text-align: center
+	.head-nav > .nav > .item
+		display: inline-block
+		margin: 1vw 1vw
+		padding: 10px 19px
+		border: 1px transparent solid
+		font-size: 18px
+		transition: .25s all ease
+		cursor: pointer
+		+hover
+		&:hover
+			border: 1px $accent solid
+	.head-article
+		> .head
+			+decor-shape
+			margin-bottom: 200px
+			padding: 0 2rem
+			text-align: center
+
+
+.adv-sect
+	background-image: url(../img/bg-adv.png)
+	background-size: cover
+	background-repeat: repeat
+	background-position: top left
+	.adv-item
+		margin: 7vw 2vw
+		text-align: center
+		> .text
+			> .head
+				margin-bottom: 15px
+				text-transform: uppercase
+			> .main
+				font-size: 16px
+		> .img
+			+img-fluid
+			margin-bottom: 20px
+
+.sect-special
+	background-color: $prim-bg-color
+
+.sect-special
+	padding: 5rem 2vw 6vw 2vw
+	height: 98%
+	text-align: center
+	> .head
+		margin-bottom: 10rem
+		+decor-shape
+	.item-special
+		width: 100%
+		display: flex
+		background-color: $sec-bg-color
+	.item-special > .text
+		display: flex
+		flex-direction: column
+		justify-content: center
+		height: auto
+		width: 50%
+		font-size: .9rem
+		text-align: center
+		padding: 3% 0
+		> .head
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: 120%
+				left: 50%
+				margin-left: -25%
+				width: 50%
+				height: 1px
+				display: none
+				border-bottom: 1px solid $accent
+		> .main
+			margin-bottom: 1vw
+		> .price
+			display: none
+			font-family: $font-bold
+	.item-special> .photo
+		width: 50%
+		line-height: 0
+		+respon-img
+		> .img
+			height: auto
+			width: 100%	
+	
+
+.sect-about
+	background-color: $third-bg-color
+	.about-image
+		> .img
+				+respon-img
+	.about-text
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: center
+		padding: 6rem 7vw 3rem 7vw
+		> .head
+			margin-bottom: 100px
+			+decor-shape
+
+
+					
+.sect-menu
+	padding: 4vw 0
+	background-color: $prim-bg-color
+	text-align: center
+	> .head
+		margin: 4vw 0
+		+decor-shape
+	.menu-list
+		+respon-img
+		text-align: center
+		img
+			max-width: 100%
+			height: auto
+
+.sect-menu
+	.carousel-indicators
+		height: 50px
+		top: 2rem
+		margin: 0 1vw
+		display: flex
+		flex-wrap: wrap
+		> .paginat
+			padding: 4px 12px 1px
+			margin: 0 20px
+			width: auto
+			height: 40px
+			display: inline-block
+			text-indent: 0
+			cursor: pointer
+			+hover
+			&.active
+				border: 1px solid $accent
+	.carousel-inner
+		margin-top: 140px
+
+
+
+.main-foot
+	padding: 6vw 2vw 3vw 2vw
+	background-image: url(../img/background-foot.png)
+	background-size: cover
+	background-position: top right
+	background-repeat: no-repeat
+	font-family: $font-regular
+
+.main-foot
+	.social
+		display: flex
+		align-self: flex-end
+		> .facebook,
+		> .instagram
+			width: 35px
+			height: 35px
+			padding: 18px
+			display: flex
+			align-items: center
+			justify-content: center
+			border: 1px solid $accent
+			+hover
+				
+		.facebook
+			margin-right: 15px
+				
+
+
+@import "media" 
+// Always at the end
